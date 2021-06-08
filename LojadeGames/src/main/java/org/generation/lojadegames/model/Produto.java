@@ -38,7 +38,7 @@ public class Produto {
 		Valor = valor;
 	}
 
-	@ManyToOne(MappedBy = "Categoria", cascade = CascadeType.ALL)
+	@ManyToOne
 	@JsonIgnoreProperties("Categoria")
 	private List<Categoria> Plataforma;
 
